@@ -1,0 +1,59 @@
+body{
+	margin: 0;
+	font-family: $bodyFont;
+	-webkit-font-smoothing: antialiased;
+}
+
+section{
+	position: relative;
+}
+
+.inner{
+	width: 95%;
+	margin: auto;
+	position: relative;
+	max-width: 1600px;
+
+
+	&--narrow{
+		width: 95%;
+		margin: auto;
+	}
+
+}
+
+
+figure{
+	margin: 0;
+}
+
+
+.text-center{
+	text-align: center;
+}
+
+.has-padding{
+	padding: 2em 0em;
+}
+.clear-block{
+	display: block;
+	clear: both;
+}
+@media(min-width: $bp-md){
+	.has-padding{
+		padding: 3em 0em;
+	}
+}
+
+@media(min-width: $bp-lg){
+	.has-padding{
+		padding: 4em 0em;
+	}
+}
+
+
+@media(min-width: $bp-xl){
+	.has-padding{
+		padding: 5em 0em;
+	}
+}
