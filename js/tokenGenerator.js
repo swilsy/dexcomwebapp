@@ -53,8 +53,8 @@
   var timeStamp = [];
    $('.avg').hide();
 	$.ajax({
-		url: 'http://www.dexcomreadingsfor.us/home.php',
-    // url: 'http://localhost:3000/dexcomwebapp/home.php',
+		// url: 'http://www.dexcomreadingsfor.us/home.php',
+    url: 'http://localhost:3000/dexcomwebapp/home',
 		dataType: 'json',
 		success: function(data){
 			var bg = data.egvs;
