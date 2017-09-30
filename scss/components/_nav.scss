@@ -1,6 +1,7 @@
 nav{
 	background: #fff;
 	padding: 1.7em 0em;
+	box-shadow: 0px 0px 10px rgba(black, 0.2);
 	&:after{
 		content: '';
 		position: relative;
@@ -9,7 +10,7 @@ nav{
 	}
 }
 .the-logo{
-	max-width: 150px;
+	max-width: 200px;
 	width: 100%;
 	float: left;
 	img{

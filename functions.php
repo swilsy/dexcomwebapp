@@ -8,7 +8,7 @@
 				CURLOPT_URL => "https://api.dexcom.com/v1/oauth2/token",
 			  CURLOPT_RETURNTRANSFER => true,
 			  CURLOPT_CUSTOMREQUEST => "POST",
-			  CURLOPT_POSTFIELDS => "client_secret=qNkDxTJzvzA1AChz&client_id=Uh7wYiK49aN0WT5V2JFMJyvfF6WwC87G&code=".$code."&grant_type=authorization_code&redirect_uri=http://localhost:3000/dexcomwebapp/home.php",
+			  CURLOPT_POSTFIELDS => "client_secret=GWDGvXGprzE4cIxT&client_id=w1s3EC9UPn5WC96c5QNAXiSI9EsMzFij&code=".$code."&grant_type=authorization_code&redirect_uri=http://dexcomreadingsfor.us/home.php",
 			  CURLOPT_HTTPHEADER => array(
 			    "cache-control: no-cache",
 			    "content-type: application/x-www-form-urlencoded"
