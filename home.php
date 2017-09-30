@@ -12,7 +12,7 @@ if($isOauthToken){
 	$curlRequest =  curlRequest(true);
 	$_SESSION['mytoken'] = $curlRequest->access_token;
 	$_SESSION['refreshToken'] = $curlRequest->refresh_token;
-	header('Location: http://dexcomreadingsfor.us/view.php');
+	header('Location: http://localhost:3000/dexcomwebapp/view.php');
 }
 else{
 	$curlRequest = curlRequest(false);

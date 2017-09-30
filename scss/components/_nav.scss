@@ -1,0 +1,41 @@
+nav{
+	background: #fff;
+	padding: 1.7em 0em;
+	&:after{
+		content: '';
+		position: relative;
+		display: block;
+		clear: both;
+	}
+}
+.the-logo{
+	max-width: 150px;
+	width: 100%;
+	float: left;
+	img{
+		width: 100%;
+	}
+}
+
+.menu{
+	float: right;
+	margin: 0; padding: 0;
+	list-style-type: none;
+
+	li{
+		display: inline;
+		margin-left: 0.4em;
+
+	}
+
+}
+.home{
+	background-color: $blue;
+	color: white;
+	padding: 0.4em 1.6em;
+	border-radius: 5px;
+	display: inline-lock;
+	font-family: $headerFont;
+	text-decoration: none;
+	font-size: 1.1em;
+}

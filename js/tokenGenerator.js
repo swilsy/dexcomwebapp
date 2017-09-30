@@ -3,6 +3,7 @@
   var myGraph = function(){
     var ctx = document.getElementById("myChart").getContext('2d');
     var myChart = new Chart(ctx, {
+      responsive: true,
           type: 'line',
           data: {
             labels: timeStamp.reverse(),
@@ -29,6 +30,7 @@
             }]
           },
           options: {
+            responsive: true,
             scales: {
               yAxes: [{
                 ticks: {
@@ -40,15 +42,16 @@
               backgroundColor: '#5D9BFF',
               displayColors: false
             },
-            responsive: true
           }
         });
+
+
   }
 	var avgGlucose = [];
   var timeStamp = [];
    $('.avg').append("Uh oh! Looks like something happened on the backend of this site. Please login for a new session <div><a class='start' href='https://api.dexcom.com/v1/oauth2/login?client_id=XE15nFWB4ACRnGY7JwUEcJG1Lizhhzxm&redirect_uri=http://dexcomreadingsfor.us/home.php&response_type=code&scope=offline_access'>Login</a></div>");
 	$.ajax({
-		url: 'http://dexcomreadingsfor.us/home.php',
+		url: 'http://localhost:3000/dexcomwebapp/home.php',
 		dataType: 'json',
 		success: function(data){
 			var bg = data.egvs;
