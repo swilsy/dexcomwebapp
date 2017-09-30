@@ -43,7 +43,10 @@
 	<div class="inner">
 		<div class="the-content-box">
 			<div class="the-content-box-inner">
-				<div class="start-parent"><a href="https://api.dexcom.com/v1/oauth2/login?client_id=w1s3EC9UPn5WC96c5QNAXiSI9EsMzFij&redirect_uri=http://dexcomreadingsfor.us/home.php&response_type=code&scope=offline_access" class="get-started">Get Started <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a></div>
+				<div class="start-parent">
+					<a href="https://api.dexcom.com/v1/oauth2/login?client_id=XlVhJJpBH3NEH4Plsv6zuw0fSW4KsGMW&redirect_uri=http://www.dexcomreadingsfor.us/home.php&response_type=code&scope=offline_access" class="get-started">Get Started <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
+					<!-- <a href="https://api.dexcom.com/v1/oauth2/login?client_id=YOPr4NmGQVSqVaavWYHx71CekYVwakfG&redirect_uri=http://localhost:3000/dexcomwebapp/home.php&response_type=code&scope=offline_access" class="get-started">Get Started <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a> -->
+				</div>
 				<h1>Features:</h1>
 				<ul class="features-list">
 					<li><i class="fa fa-check" aria-hidden="true"></i> 48 hour of readings.</li>

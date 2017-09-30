@@ -39,6 +39,7 @@
 				
 
 			<div class="avg">
+
 				<small class="results-details">*results have a 3.5 hour delay</small>
 
 				<p class="your-stats">Your 48 hour stats:</p>
@@ -65,12 +66,21 @@
 
 
 			<canvas id="myChart" style="height:80vh; width:100vw"></canvas>
-
+				<div class="graph" style="position: relative; z-index: 999;">
+					<div class="uhoh">Uhoh! Looks like there was an issue pulling your data! Please sign in again!
+					<div>
+						<!-- <a href="https://api.dexcom.com/v1/oauth2/login?client_id=XlVhJJpBH3NEH4Plsv6zuw0fSW4KsGMW&redirect_uri=http://www.dexcomreadingsfor.us/home.php&response_type=code&scope=offline_access" class="get-started">Get Started <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a> -->
+					<a href="https://api.dexcom.com/v1/oauth2/login?client_id=YOPr4NmGQVSqVaavWYHx71CekYVwakfG&redirect_uri=http://localhost:3000/dexcomwebapp/home.php&response_type=code&scope=offline_access" class="get-started">Get Started <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
+						
+					</div>
+				</div>
+				</div>
 			<div class="loader">
+
 				<div class="the_loader"></div>
 			</div>
 		</div>
-	</div>
+	</div>	
 
 		
 		<div class="inner">
