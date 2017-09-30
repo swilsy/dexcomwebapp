@@ -48,6 +48,7 @@
 
 
   }
+  //im here
 	var avgGlucose = [];
   var timeStamp = [];
    $('.avg').hide();
