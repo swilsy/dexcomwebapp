@@ -1,22 +1,4 @@
-<head>
-	<title>Dexcom Readings For Us</title>
-	<link rel="stylesheet" href="assets/css/style.css">
-	<script src="https://use.fontawesome.com/a9ce52f234.js"></script>
-	<meta name=viewport content="width=device-width, initial-scale=1">
-	<script src="assets/js/jquery.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.0/Chart.bundle.min.js"></script>
-	<!-- Global Site Tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-107286439-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments)};
-  gtag('js', new Date());
-
-  gtag('config', 'UA-107286439-1');
-</script>
-
-</head>
-<body>
+<?php include('header.php'); ?>
 <nav>
 	<div class="inner">
 		<figure class="the-logo">
@@ -44,8 +26,8 @@
 		<div class="the-content-box">
 			<div class="the-content-box-inner">
 				<div class="start-parent">
-					<!-- <a href="https://api.dexcom.com/v1/oauth2/login?client_id=XlVhJJpBH3NEH4Plsv6zuw0fSW4KsGMW&redirect_uri=http://www.dexcomreadingsfor.us/home.php&response_type=code&scope=offline_access" class="get-started">Get Started <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a> -->
-					<a href="https://api.dexcom.com/v1/oauth2/login?client_id=YOPr4NmGQVSqVaavWYHx71CekYVwakfG&redirect_uri=http://localhost:3000/dexcomwebapp/home&response_type=code&scope=offline_access" class="get-started">Get Started <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
+					<a href="https://api.dexcom.com/v1/oauth2/login?client_id=XlVhJJpBH3NEH4Plsv6zuw0fSW4KsGMW&redirect_uri=http://www.dexcomreadingsfor.us/home&response_type=code&scope=offline_access" class="get-started">Get Started <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
+					<!-- <a href="https://api.dexcom.com/v1/oauth2/login?client_id=YOPr4NmGQVSqVaavWYHx71CekYVwakfG&redirect_uri=http://localhost:3000/dexcomwebapp/home&response_type=code&scope=offline_access" class="get-started">Get Started <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a> -->
 				</div>
 				<h1>Features:</h1>
 				<ul class="features-list">

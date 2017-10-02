@@ -1,23 +1,4 @@
-<html>
-<head>
-	<title>Dexcom Readings For Us</title>
-	<link rel="stylesheet" href="assets/css/style.css">
-	<script src="https://use.fontawesome.com/a9ce52f234.js"></script>
-	<meta name=viewport content="width=device-width, initial-scale=1">
-	<script src="assets/js/jquery.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.0/Chart.bundle.min.js"></script>
-	<!-- Global Site Tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-107286439-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments)};
-  gtag('js', new Date());
-
-  gtag('config', 'UA-107286439-1');
-</script>
-
-</head>
-<body>
+<?php include('header.php'); ?>
 <nav>
 	<div class="inner">
 		<figure class="the-logo">
@@ -42,7 +23,7 @@
 
 				<small class="results-details">*results have a 3.5 hour delay</small>
 
-				<p class="your-stats">Your 48 hour stats:</p>
+				<p class="your-stats">Your 48hr stats:</p>
 				
 				<div class="three-container">
 					<div class="item">
@@ -60,17 +41,19 @@
 				</div>
 
 				<p class="a1c">Your Estimated A1C is: <span class="the-a1c">8</span></p>
-				<p>In the past 48 hours, your dexcom has provided <span class="the-readings"></span> readings</p>
+				<p>Your dexcom has provided <span class="the-readings"></span> readings</p>
 			</div>
 
 
 
-			<canvas id="myChart" style="height:80vh; width:100vw"></canvas>
+			<div class="graph-container">
+				<canvas id="myChart" style="height:80vh; width:100vw"></canvas>
+			</div>
 				<div class="graph" style="position: relative; z-index: 999;">
 					<div class="uhoh">Uhoh! Looks like there was an issue pulling your data! Please sign in again!
 					<div>
-						<!-- <a href="https://api.dexcom.com/v1/oauth2/login?client_id=XlVhJJpBH3NEH4Plsv6zuw0fSW4KsGMW&redirect_uri=http://www.dexcomreadingsfor.us/home.php&response_type=code&scope=offline_access" class="get-started">Get Started <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a> -->
-					<a href="https://api.dexcom.com/v1/oauth2/login?client_id=YOPr4NmGQVSqVaavWYHx71CekYVwakfG&redirect_uri=http://localhost:3000/dexcomwebapp/home&response_type=code&scope=offline_access" class="get-started">Get Started <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
+						<a href="https://api.dexcom.com/v1/oauth2/login?client_id=XlVhJJpBH3NEH4Plsv6zuw0fSW4KsGMW&redirect_uri=http://www.dexcomreadingsfor.us/home&response_type=code&scope=offline_access" class="get-started">Get Started <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
+					<!-- <a href="https://api.dexcom.com/v1/oauth2/login?client_id=YOPr4NmGQVSqVaavWYHx71CekYVwakfG&redirect_uri=http://localhost:3000/dexcomwebapp/home&response_type=code&scope=offline_access" class="get-started">Get Started <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a> -->
 						
 					</div>
 				</div>
@@ -96,6 +79,7 @@
 		</div>
 
 	<div class="graph">
+	
 		<div class="the-what" style="text-align: center;">
 			<a target="_blank" href="https://twitter.com/ispykenny"><small>by kenny krosky <i class="fa fa-twitter" aria-hidden="true"></i></small></a>
 		</div>

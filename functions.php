@@ -8,8 +8,8 @@
 				CURLOPT_URL => "https://api.dexcom.com/v1/oauth2/token",
 			  CURLOPT_RETURNTRANSFER => true,
 			  CURLOPT_CUSTOMREQUEST => "POST",
-			  // CURLOPT_POSTFIELDS => "client_secret=Jtl6lzxu1YTeGljE&client_id=XlVhJJpBH3NEH4Plsv6zuw0fSW4KsGMW&code=".$code."&grant_type=authorization_code&redirect_uri=http://www.dexcomreadingsfor.us/home.php",
-			  CURLOPT_POSTFIELDS => "client_secret=YkWag7JV1S3dze1G&client_id=YOPr4NmGQVSqVaavWYHx71CekYVwakfG&code=".$code."&grant_type=authorization_code&redirect_uri=http://localhost:3000/dexcomwebapp/home",
+			  CURLOPT_POSTFIELDS => "client_secret=Jtl6lzxu1YTeGljE&client_id=XlVhJJpBH3NEH4Plsv6zuw0fSW4KsGMW&code=".$code."&grant_type=authorization_code&redirect_uri=http://www.dexcomreadingsfor.us/home",
+			  // CURLOPT_POSTFIELDS => "client_secret=YkWag7JV1S3dze1G&client_id=YOPr4NmGQVSqVaavWYHx71CekYVwakfG&code=".$code."&grant_type=authorization_code&redirect_uri=http://localhost:3000/dexcomwebapp/home",
 			  CURLOPT_HTTPHEADER => array(
 			    "cache-control: no-cache",
 			    "content-type: application/x-www-form-urlencoded"
@@ -32,6 +32,8 @@
 			);
 		}
 
+
+
 		$curl = curl_init();
 		curl_setopt_array($curl, $setopt_array);
 		$response = curl_exec($curl);
@@ -44,6 +46,9 @@
 
 
 	}
+
+
+	
 
 
 
