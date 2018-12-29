@@ -5,7 +5,7 @@
 		if($token){
 			$code = $_GET['code'];
 			$setopt_array = array(
-				CURLOPT_URL => "https://api.dexcom.com/v1/oauth2/token",
+				CURLOPT_URL => "https://sandbox-api.dexcom.com/v1/oauth2/token",
 			  CURLOPT_RETURNTRANSFER => true,
 			  CURLOPT_CUSTOMREQUEST => "POST",
 			  //CURLOPT_POSTFIELDS => "client_secret=Jtl6lzxu1YTeGljE&client_id=XlVhJJpBH3NEH4Plsv6zuw0fSW4KsGMW&code=".$code."&grant_type=authorization_code&redirect_uri=http://www.dexcomreadingsfor.us/home",
@@ -21,7 +21,7 @@
 			$formatedDate = date("c");
 			$finalDate = gmdate("Y-m-d\TH:i:s");
 			$date = gmdate("Y-m-d\TH:i:s", strtotime('-48 hours', time()));
-			$showDate = "https://api.dexcom.com/v1/users/self/egvs?startDate=$date&endDate=$finalDate";
+			$showDate = "https://sandbox-api.dexcom.com/v1/users/self/egvs?startDate=$date&endDate=$finalDate";
 
 			$setopt_array = array(
 				CURLOPT_URL => $showDate,

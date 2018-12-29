@@ -12,7 +12,7 @@ var gulp = require('gulp'),
 
 
  settings = {
-  server: 'http://localhost:8888/dexcomwebapp/',
+  server: 'http://localhost:dev/beetus/dexcomwebapp/',
   siteFiles: '**/*.php',
   sassFiles: 'scss/**/*.scss',
   cssDest: 'assets/css/',

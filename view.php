@@ -53,7 +53,7 @@
 					<div class="uhoh">Uhoh! Looks like there was an issue pulling your data! Please sign in again!
 					<div>
 						<!-- <a href="https://api.dexcom.com/v1/oauth2/login?client_id=XlVhJJpBH3NEH4Plsv6zuw0fSW4KsGMW&redirect_uri=http://www.dexcomreadingsfor.us/home&response_type=code&scope=offline_access" class="get-started">Get Started <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a> -->
-					<a href="https://api.dexcom.com/v1/oauth2/login?client_id=Vjiko00BljSRCuHxSgYU3JV80D3ZQzWR&redirect_uri=http://localhost/dev/beetus/dexcomwebapp/home&response_type=code&scope=offline_access" class="get-started">Get Started <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
+					<a href="https://sandbox-api.dexcom.com/v2/oauth2/login?client_id=Vjiko00BljSRCuHxSgYU3JV80D3ZQzWR&redirect_uri=http://localhost/dev/beetus/dexcomwebapp/home&response_type=code&scope=offline_access" class="get-started">Get Started <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
 						
 					</div>
 				</div>
