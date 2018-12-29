@@ -21,13 +21,13 @@ if(isset($_GET['fetchaccess'])){
 	  CURLOPT_TIMEOUT => 30,
 	  CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
 	  CURLOPT_CUSTOMREQUEST => "POST",
-	  CURLOPT_POSTFIELDS => "client_secret=YkWag7JV1S3dze1G&client_id=YOPr4NmGQVSqVaavWYHx71CekYVwakfG&refresh_token=".$_SESSION['refreshToken']."&grant_type=refresh_token&redirect_uri=http://localhost:3000/dexcomwebapp/home",
+	  CURLOPT_POSTFIELDS => "client_secret=VneGEXrb4GNhsfOJ&client_id=Vjiko00BljSRCuHxSgYU3JV80D3ZQzWR&refresh_token=".$_SESSION['refreshToken']."&grant_type=refresh_token&redirect_uri=http://localhost/dev/beetus/dexcomwebapp/home",
 	  CURLOPT_HTTPHEADER => array(
 	    "cache-control: no-cache",
 	    "content-type: application/x-www-form-urlencoded"
 	  ),
 	));
-	// header('Location: http://localhost:3000/dexcomwebapp/view');
+	// header('Location: http://localhost/dev/beetus/dexcomwebapp/view');
 	$response = curl_exec($curl);
 	$err = curl_error($curl);
 	
@@ -43,8 +43,8 @@ if($isOauthToken){
 	$_SESSION['mytoken'] = $curlRequest->access_token;
 	$_SESSION['refreshToken'] = $curlRequest->refresh_token;
 
-	header('Location: http://www.dexcomreadingsfor.us/view');
-	// header('Location: http://localhost:3000/dexcomwebapp/view');
+	//header('Location: http://www.dexcomreadingsfor.us/view');
+	 header('Location: http://localhost:8080/dexcomwebapp/view');
 }
 else{
 	$curlRequest = curlRequest(false);
