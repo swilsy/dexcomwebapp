@@ -26,7 +26,7 @@
 		<div class="the-content-box">
 			<div class="the-content-box-inner">
 				<div class="start-parent">
-					<a href="https://api.dexcom.com/v1/oauth2/login?client_id=XlVhJJpBH3NEH4Plsv6zuw0fSW4KsGMW&redirect_uri=http://www.dexcomreadingsfor.us/home&response_type=code&scope=offline_access" class="get-started">Get Started <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
+					<a href="https://sandbox-api.dexcom.com/v2/oauth2/login?client_id= BQYyHD7vcTAcQAVrO4LPACFmYMM6ifmC&redirect_uri=http://dexcom.swilsycloud.com/home.php&response_type=code&scope=offline_access" class="get-started">Get Started <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
 					<!-- <a href="https://api.dexcom.com/v1/oauth2/login?client_id=YOPr4NmGQVSqVaavWYHx71CekYVwakfG&redirect_uri=http://localhost:3000/dexcomwebapp/home&response_type=code&scope=offline_access" class="get-started">Get Started <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a> -->
 				</div>
 				<h1>Features:</h1>
